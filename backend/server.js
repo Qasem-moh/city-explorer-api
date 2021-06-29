@@ -41,9 +41,9 @@ class Forecast {
         this.description = weatherData.weather.description;
     }
 }
-// app.get("*", (req, res) => {
-//     res.status(404).send("page not found");
-// });
+app.get("*", (req, res) => {
+    res.status(404).send("page not found");
+});
 
 
 
