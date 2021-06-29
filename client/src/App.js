@@ -1,22 +1,22 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React, { Component} from 'react'
+// import axios from 'axios'
+import GettingData from './components/form'
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
 
-  let getData = async () => {
-    let axiosData = await axios.get('http://localhost:8888/wheather')
+        <header >
+          <h1>City Explorer </h1>
+        </header>
 
-    console.log((axiosData));
-  }
-  return (
-    <div className="App">
-      <div>
-        <button onClick={getData}>Get</button>
-
+        <GettingData />
       </div>
-
-    </div>
-  );
+    )
+  }
 }
+
 
 export default App;

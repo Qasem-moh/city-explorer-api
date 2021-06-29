@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button, Image } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 class GettingData extends React.Component{
 render(){
     return(
