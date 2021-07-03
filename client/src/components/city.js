@@ -60,6 +60,7 @@ class GetDataFromUser extends Component {
       );
       this.setState({
         ArrayOfWeatharData: axiosWeather.data,
+        showdataweth: false,
       });
     } catch {
       this.setState({
